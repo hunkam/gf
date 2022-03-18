@@ -2,7 +2,7 @@ import discord
 import random
 
 TOKEN = 'OTU0NDQ2NDMxOTEyMDk5OTIx.YjTPgg.PhgLwZyTnyALEzUeqSTN3R914tg'
-# ^^DISCORD bot token^^
+# ^^DISCORD bot token^^pls not steal
 
 client = discord.Client()
 
