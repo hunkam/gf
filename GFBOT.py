@@ -40,9 +40,9 @@ async def on_message(message):
         await message.channel.send(f'consider touching grass {username}')
         return
     elif user_message.lower() == "bye":
-        await message.channel.send(f'see you later 
+        await message.channel.send(f'see you later {username}')
     elif user_message.lower() == "i love you":
-        await message.channel.send(f'no bitches {username}?')
+        await message.channel.send(f'no bitches {username}'?)
         return
     elif user_message.lower() == "hey":
         await message.channel.send(f'i love you {username}')
