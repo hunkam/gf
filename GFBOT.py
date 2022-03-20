@@ -1,7 +1,4 @@
-"""hey & thanks for taking the time to look at this code, this is a script interacting with the discord.py
-module to read discord messages and repsond accordingly. 
- oh also how can I hide my private token (i tried assigning it to a variable in a seperate file that id
- have git ignore but that would't work right...)"""
+
 import os
 from dotenv import load_dotenv
 load_dotenv()
@@ -12,7 +9,7 @@ import discord
 import random
 
 TOKEN = os.getenv('api_key')
-# ^^DISCORD bot token^^pls not steal
+
 
 client = discord.Client()
 
@@ -43,10 +40,12 @@ async def on_message(message):
         await message.channel.send(f'consider touching grass {username}')
         return
     elif user_message.lower() == "bye":
-        await message.channel.send(f'see you later{username}')
-        return
+        await message.channel.send(f'see you later 
     elif user_message.lower() == "i love you":
-        await message.channel.send(f'no bitches{username}?')
+        await message.channel.send(f'no bitches {username}?')
+        return
+    elif user_message.lower() == "hey":
+        await message.channel.send(f'i love you {username}')
         return
 
 
